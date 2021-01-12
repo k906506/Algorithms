@@ -22,7 +22,7 @@ def main():
                             startW += 1
                         if chess[k][l] != "W":
                             startB += 1
-                        
+                       
             result.append(startW)
             result.append(startB)
         
