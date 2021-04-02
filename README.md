@@ -1,6 +1,6 @@
-# Progress table of BOJ
+# Progress Table of BOJ
 
-```
+```python
 # 브루트 포스 (Clear!)
 └ 2798. 블랙잭
 └ 2231. 분해합
