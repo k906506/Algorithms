@@ -1,5 +1,3 @@
-# Progress Table of BOJ
-
 ```C++
 # 브루트 포스 (Clear!)
 └ 2798. 블랙잭
