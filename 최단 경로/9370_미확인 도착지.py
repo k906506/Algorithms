@@ -26,13 +26,13 @@ def dijkstra(node, V, E, start):
 def main():
     cnt = int(sys.stdin.readline())
 
-    for i in range(cnt):
+    for _ in range(cnt):
         V, E, T = map(int, sys.stdin.readline().split())
         s, g, h = map(int, sys.stdin.readline().split())
 
         node = [[] for _ in range(V+1)]
 
-        for i in range(E):
+        for _ in range(E):
             u, v, w = map(int, sys.stdin.readline().split())
             node[u].append([v, w])   # 출발, 도착, 가중치
             node[v].append([u, w])
@@ -42,7 +42,7 @@ def main():
         distance3 = dijkstra(node, V, E, h) # 시작점이 h인 다익스트라
 
         result = []
-        for i in range(T):
+        for _ in range(T):
             dst = int(sys.stdin.readline())
             distance = min(distance1[g] + distance2[h] + distance3[dst], distance1[h] + distance3[g] + distance2[dst]) # 시작 -> g -> h -> 끝 / 시작 -> h -> g -> 끝
             if distance == INF:
