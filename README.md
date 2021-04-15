@@ -97,6 +97,6 @@ https://www.acmicpc.net/user/k906506
 └ 9370. 미확인 도착지
 └ 11657. 타임머신
 └ 11404. 플로이드
-└ 10217. KCM Travel ★ GOLDⅠ ★
+└ 10217. KCM Travel -> GOLD 1
 └ 1956. 운동 (X)
 ```
