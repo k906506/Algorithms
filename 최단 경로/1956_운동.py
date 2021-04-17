@@ -20,6 +20,7 @@ def dijkstra(path, v, e, src, result):
         
         visited[current[1]] = True
 
+    print(distance)
     if distance[src] < result:
         result = distance[src]
 
