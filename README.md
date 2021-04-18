@@ -1,6 +1,6 @@
 https://www.acmicpc.net/user/k906506
 ```html
-# <del>브루트 포스</del> (Clear!)
+# 브루트 포스 (Clear!)
 └ 2798. 블랙잭
 └ 2231. 분해합
 └ 7568. 덩치
