@@ -100,6 +100,10 @@ https://www.acmicpc.net/user/k906506
 └ 10217. KCM Travel -> GOLD 1
 └ 1956. 운동
 
+# 최소 신장 트리
+└ 9372. 상근이의 여행
+└ 1197. 최소 스패닝 트리
+
 # 2021 ICPC Sinchon Winter Algorithm Camp Contest - 초급
 └ 20920. 영단어 암기는 괴로워
 ```
