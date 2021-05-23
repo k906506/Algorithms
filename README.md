@@ -17,6 +17,7 @@ https://www.acmicpc.net/user/k906506
 └ 11651. 좌표 정렬하기 2
 └ 1181. 단어 정렬
 └ 10814. 나이순 정렬
+└ 18870. 좌표 압축
 
 # 동적 계획법 1 (Clear!)
 └ 1003. 피보나치 함수
@@ -103,6 +104,7 @@ https://www.acmicpc.net/user/k906506
 # 최소 신장 트리
 └ 9372. 상근이의 여행
 └ 1197. 최소 스패닝 트리
+└ 4386. 별자리 만들기
 
 # 2021 ICPC Sinchon Winter Algorithm Camp Contest - 초급
 └ 20920. 영단어 암기는 괴로워
