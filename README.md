@@ -106,6 +106,11 @@ https://www.acmicpc.net/user/k906506
 └ 1197. 최소 스패닝 트리
 └ 4386. 별자리 만들기
 
+# 다이나믹 프로그래밍
+└ 1520. 내리막길
+└ 2225. 합분해
+└ 1005. ACM Craft
+
 # 2021 ICPC Sinchon Winter Algorithm Camp Contest - 초급
 └ 20920. 영단어 암기는 괴로워
 ```
