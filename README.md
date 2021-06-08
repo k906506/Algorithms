@@ -110,6 +110,7 @@ https://www.acmicpc.net/user/k906506
 └ 1520. 내리막길
 └ 2225. 합분해
 └ 1005. ACM Craft
+└ 1937. 욕심쟁이 판다
 
 # 2021 ICPC Sinchon Winter Algorithm Camp Contest - 초급
 └ 20920. 영단어 암기는 괴로워
