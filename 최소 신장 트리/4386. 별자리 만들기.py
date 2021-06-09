@@ -1,50 +1,47 @@
-import sys
 import math
+import heapq
+import sys
 
-def getParent(parents, i):
-    if parents[i] == i:
-        return i
-    return getParent(parents, parents[i])
 
-def unionParent(parents, a, b):
-    parentA = getParent(parents, a)
-    parentB = getParent(parents, b)
-    if parentA > parentB: # B가 진짜 부모
-        parents[a] = b
-    else:
-        parents[b] = a
+def find(info, n):
+    visited = [False for _ in range(n)]
+    sum = 0
+    queue = []
+    heapq.heappush(queue, [0, 0])  # 거리, 시작지점
+
+    while queue:
+        dist, current = heapq.heappop(queue)
+        if visited[current]:
+            continue
+        for value, dst in info[current]:
+            heapq.heappush(queue, [value, dst])
+        sum += dist
+        visited[current] = True
+
+    return round(sum, 2)
+
+
+def betweenLength(src_x, src_y, dst_x, dst_y):
+    return math.sqrt((dst_x - src_x) ** 2 + (dst_y - src_y) ** 2)
+
 
 def main():
     n = int(input())
+    info = [[] for _ in range(n)]
     stars = []
-    edges = []
-    parents = [i for i in range(n)]
 
     for _ in range(n):
         x, y = map(float, sys.stdin.readline().split())
         stars.append((x, y))
 
-    for i in range(n-1):
-        for j in range(i+1, n):
-            x = stars[i][0] - stars[j][0]
-            y = stars[i][1] - stars[j][1]
-            dist = math.sqrt(x**2 + y**2)
-            edges.append((dist, i, j))
+    for i in range(n):
+        for j in range(i + 1, n):
+            length = betweenLength(stars[i][0], stars[i][1], stars[j][0], stars[j][1])
+            info[i].append([length, j])
+            info[j].append([length, i])
 
-    edges.sort() # dist에 따라 오름차순으로 정렬
-    print(edges)
+    print(find(info, n))
 
-    ans = 0
-    for dist, i, j in edges:
-        print(parents)
-        if getParent(parents, i) != getParent(parents, j):
-            print(parents)
-            unionParent(parents, i, j)
-            ans += dist
-
-    print(dist)
 
 if __name__ == "__main__":
     main()
-
-
