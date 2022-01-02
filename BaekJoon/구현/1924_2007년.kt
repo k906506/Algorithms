@@ -27,3 +27,4 @@ fun main() {
         6 -> print("SAT")
     }
 }
+
