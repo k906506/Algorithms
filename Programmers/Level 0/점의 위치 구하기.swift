@@ -15,3 +15,4 @@ func solution(_ dot:[Int]) -> Int {
         }
     }
 }
+
