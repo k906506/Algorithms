@@ -10,4 +10,4 @@ func solution(_ numbers:[Int], _ k:Int) -> Int {
         odd += event
         return odd[(k - 1) % odd.count]
     }
-}
+}$
