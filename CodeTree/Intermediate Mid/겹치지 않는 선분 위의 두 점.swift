@@ -9,7 +9,7 @@ for _ in 0..<inputs[1] {
 
 lines.sort(by: { $0[0] < $1[0] })
 
-var start = 1
+var start = 0
 var end = lines.last![1] // 마지막 선분의 끝점
 var mid = 0
 var answer = 0
@@ -18,11 +18,15 @@ while start <= end {
     mid = (start + end) / 2 
 
     var cnt = 0
+    var last = Int.min
     for line in lines {
-        var limit = line[0]
-        while limit <= line[1] { // 현재 선분의 끝점에 도달할 떄까지 탐색
+        while last + mid <= line[1] { // 직전 좌표 + 최소 거리가 선분의 끝점보다 작을 떄 (이동 가능한 경우)
             cnt += 1
-            limit += mid
+            last = max(line[0], last + mid)
+
+            if cnt >= inputs[0] { // n보다 커지면 반복문을 더 수행할 필요가 없음
+                break
+            }
         }
     }
 
